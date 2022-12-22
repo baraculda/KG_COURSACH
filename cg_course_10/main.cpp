@@ -154,7 +154,6 @@ void menu(Warnok_draw* scene, prism* obj1, prism* obj2)
 	}
 
 
-	getch();
 	closegraph();
 
 }
@@ -338,8 +337,8 @@ int main()
 	planeArray* scenePlanes2 = new planeArray(6 * 2 + 5 * 2, all_planes2);
 
 
-	prism* obj2 = new prism(prism1_points, shadow_prism1_points, prizm1_planes, shadow_prism1_planes, 6, 8);
 	prism* obj1 = new prism(prism2_points, shadow_prism2_points, prizm2_planes, shadow_prism2_planes, 5, 6);
+	prism* obj2 = new prism(prism1_points, shadow_prism1_points, prizm1_planes, shadow_prism1_planes, 6, 8);
 
 	Warnok_draw* scene = new Warnok_draw(scenePoints2, scenePlanes2);
 	menu(scene, obj1, obj2);
