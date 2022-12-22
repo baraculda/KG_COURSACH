@@ -142,7 +142,6 @@ void menu(Warnok_draw* scene, prism* obj1, prism* obj2)
 		}
 		if (!exit_flag)
 		{
-			clearviewport();
 			obj1->makeShadow();
 			obj2->makeShadow();
 			obj1->projection_prizma();
